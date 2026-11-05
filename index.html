@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Is Joe Biden Alive? Maybe…</title>
 <meta name="description" content="Maybe… unless the rumors are true.">
 <link rel="canonical" href="https://isjoebidenalive.com/">
@@ -14,16 +14,21 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Is Joe Biden Alive? Maybe…">
 <meta name="twitter:description" content="Maybe… unless the rumors are true.">
-<meta name="theme-color" content="#0b1f3a">
+<meta name="theme-color" content="#16335f">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇺🇸</text></svg>">
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
-  html, body { height: 100%; margin: 0; }
+  html, body { height: 100%; margin: 0; background-color: #07152a; }
+  html {
+    min-height: 100%; min-height: 100svh;
+    background: #07152a radial-gradient(ellipse at top, #16335f 0%, #0b1f3a 60%, #07152a 100%) no-repeat;
+    background-size: 100% 100%;
+  }
   body {
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    min-height: 100vh; min-height: 100dvh; padding: 2rem 1.25rem; text-align: center;
-    background: radial-gradient(ellipse at top, #16335f 0%, #0b1f3a 60%, #07152a 100%);
+    min-height: 100vh; min-height: 100dvh; padding: calc(2rem + env(safe-area-inset-top)) calc(1.25rem + env(safe-area-inset-right)) calc(2rem + env(safe-area-inset-bottom)) calc(1.25rem + env(safe-area-inset-left)); text-align: center;
+    background: transparent;
     color: #f5f7fb;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
